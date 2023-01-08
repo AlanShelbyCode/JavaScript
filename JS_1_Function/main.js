@@ -68,6 +68,31 @@ showAllArguments(123,true,'qweqewqwe',1231231);
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age ,
 // та виводить їх в документ. Для кожного об'єкту окремий блок.
 
+function showObjects(...arr) {
+    for (let i = 0; i < arr.length; i++) {
+        document.write(arr[i]);
+    }
+}
+let arrObject = [
+    {id:1, name: 'qwe', age: 123},
+    {id:2, name: 'qwe', age: 123},
+    {id:3, name: 'qwe', age: 123},
+    {id:4, name: 'qwe', age: 123},
+    {id:5, name: 'qwe', age: 123}
+]
+showObjects(arrObject);
 
 // - створити функцію яка повертає найменьше число з масиву
-// - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+function findMin(arrMin) {
+    let result = arrMin[0];
+    for (let i = 1; i < arrMin.length; i++) {
+        if(result >= arrMin[i]){
+        result = arrMin[i];
+        }
+    }
+return result;
+}
+let arrMin = [5,2,3,4,5,6,3,1,4,3,0];
+document.write(findMin(arrMin));
+// - створити функцію яка приймає масив чисел, сумує значення елементів масиву
+// та повертає його. Приклад [1,2,10]->13
