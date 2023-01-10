@@ -107,3 +107,28 @@ function findSum(arrSum) {
 }
 let arrSum = [5,2,3,4,5,6,3,1,4,3,0];
 console.log(findSum(arrSum));
+// - створити функцію яка повертає найменьше число з масиву
+function findMin(arrMin) {
+    let result = arrMin[0];
+    for (let i = 1; i < arrMin.length; i++) {
+        if(result >= arrMin[i]){
+            result = arrMin[i];
+        }
+    }
+    return result;
+}
+let arrMin = [5,2,3,4,5,6,3,1,4,3,0];
+document.write(findMin(arrMin));
+// - створити функцію яка приймає масив чисел, сумує значення елементів масиву
+// та повертає його. Приклад [1,2,10]->13
+
+function findSum(arrSum) {
+    let result = 0;
+    for (let i = 0; i < arrSum.length; i++) {
+        debugger;
+        result = result + result[i];
+    }
+    return result;
+}
+let arrSum = [5,2,3,4,5,6,3,1,4,3,0];
+console.log(findSum(arrSum));
