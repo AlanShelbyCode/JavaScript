@@ -67,7 +67,40 @@ showObjects(arrObject);
 
 
 // - створити функцію яка повертає найменьше число з масиву
+let  findMin = (arrMin) => {
+    let result = arrMin[0];
+    for (let i = 1; i < arrMin.length; i++) {
+        if(result >= arrMin[i]){
+            result = arrMin[i];
+        }
+    }
+    return result;
+}
+let arrMin = [5,2,3,4,5,6,3,1,4,3,0];
+document.write(findMin(arrMin));
 // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його.
 //     Приклад sum([1,2,10]) //->13
+let  findSum = (arrSum) => {
+    let result = 0;
+    for (let i = 0; i < arrSum.length; i++) {
+        debugger;
+        result = result + result[i];
+    }
+    return result;
+}
+let arrSum = [5,2,3,4,5,6,3,1,4,3,0];
+document.write(findSum(arrSum));
+
 // - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
+
+let swap = (arrSwap, index_1, index_2 ) =>{
+    let value_1 = arrSwap[index_1];
+    let value_2 = arrSwap[index_2];
+
+    arrSwap[index_1] = value_2;
+    arrSwap[index_2] = value_1;
+    return arrSwap;
+}
+let arrSwap = [5,2,3,4,5,6,3,1,4,3,0];
+document.write(swap(arrSwap,0,1));
