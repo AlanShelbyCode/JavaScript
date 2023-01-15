@@ -104,3 +104,14 @@ let swap = (arrSwap, index_1, index_2 ) =>{
 }
 let arrSwap = [5,2,3,4,5,6,3,1,4,3,0];
 document.write(swap(arrSwap,0,1));
+
+let swap2 = (index_1, index_2, ...arrSwap2 ) =>{
+    let value_1 = arrSwap[index_1];
+    let value_2 = arrSwap[index_2];
+
+    arrSwap[index_1] = value_2;
+    arrSwap[index_2] = value_1;
+    return arrSwap2;
+}
+let arrSwap2 = [5,2,3,4,5,6,3,1,4,3,0];
+document.write(swap2(0,1,arrSwap2));
