@@ -1,0 +1,12 @@
+
+.div1{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    text-align: center;
+}
+head{
+    background-color: khaki;
+}
