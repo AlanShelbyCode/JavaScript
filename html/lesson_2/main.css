@@ -1,6 +1,14 @@
-img{
-    height: 100px;
-    width: 100px;
+
+.top{
+    height: 300px;
+    width: 300px;
 }
-.container{
+
+.bot{
+    height: 300px;
+    width: 300px;
+}
+.middle{
+    height: 300px;
+    width: 300px;
 }
