@@ -1,14 +1,21 @@
-
+.container{
+    height: 1000px;
+    width: 1000px;
+    background-color: silver;
+}
 .top{
+
+    display: flex;
     height: 300px;
-    width: 300px;
 }
 
 .bot{
+    display: flex;
     height: 300px;
     width: 300px;
 }
 .middle{
+    display: flex;
     height: 300px;
-    width: 300px;
+    width: 900px;
 }
