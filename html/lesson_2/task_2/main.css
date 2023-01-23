@@ -1,0 +1,14 @@
+.backgraound{
+    height: 1000px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    background-color: silver;
+}
+.border{
+    background-color: aqua;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+    border: 5px solid yellow;
+}
