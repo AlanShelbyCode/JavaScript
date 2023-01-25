@@ -1,7 +1,7 @@
 
 .father{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 300px;
 }
 .box{
@@ -17,17 +17,24 @@
     align-items: center;
 }
 .icon{
-    height: 100px;
-    width: 100px;
-    background-color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: gold;
+
+    height: 60px;
+    width: 60px;
+    background-color: white;
     border-radius: 50%;
+    border: solid 1px black;
 
     position: absolute;
     margin-top: -200px;
-
 }
 
 .button{
     background-color: white;
     height: 30px;
+    width: 160px;
 }
