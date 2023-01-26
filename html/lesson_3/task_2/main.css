@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+.head{
+    height: 50px;
+    width: 100%;
+    background-color: silver;
+
+    display: flex;
+justify-content: space-between;
+
+}
+.head_left{
+    background-color: cornflowerblue;
+    width: 10%;
+    height: 50%;
+    margin: 10px 50px ;
+    border-radius: 3px;
+
+}
+.head_right{
+    width: 50px;
+    height: 50%;
+    margin: 10px 120px;
+    color: lightseagreen;
+
+
+}
+.middle{
+    height: 200px;
+    width: 100%;
+    background-color: cornflowerblue;
+}
+.footer{
+    height: 50px;
+    width: 100%;
+    background-color: silver;
+
+    display: flex;
+    justify-content: center;
+
+}
+.kolo{
+    margin: 0 5px 0 5px ;
+    height: 70px;
+    width: 70px;
+    background-color: lightcoral;
+    border-radius: 10%;
+    position: relative;
+    top: -40px;
+
+}
