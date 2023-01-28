@@ -1,0 +1,50 @@
+.block_head{
+    margin: 10px;
+    height: 300px;
+    width: 320px;
+    background-color: cornflowerblue;
+}
+.block_middle{
+    margin: 10px;
+    height: 300px;
+    width: 200px;
+    background-color: cornflowerblue;
+}
+.block_foot {
+    margin: 10px;
+    height: 300px;
+    width: 100px;
+    background-color: cornflowerblue;
+}
+.container{
+    display: flex;
+
+}
+@media screen  and (min-width: 0px) and (max-width: 600px){
+
+.block_head{
+    height: 100px;
+    width: 300px;
+    background-color: deeppink;
+    border-radius: 8px;
+}
+    .block_middle{
+        margin: 10px;
+        height: 300px;
+        width: 300px;
+        background-color: deeppink;
+        border-radius: 8px;
+    }
+    .block_foot {
+        margin: 10px;
+        height: 100px;
+        width: 300px;
+        background-color: deeppink;
+        border-radius: 8px;
+    }
+    .container{
+        display: block;
+
+    }
+
+}
