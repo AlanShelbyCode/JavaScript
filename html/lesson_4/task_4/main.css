@@ -1,0 +1,144 @@
+.container{
+    display: flex;
+}
+.container_left{
+    margin:  0 10px 10px 0 ;
+    width: 70px;
+}
+.container_left_logo{
+    background-color: cornflowerblue;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.container_left_nav{
+    background-color: cornflowerblue;
+    height: 250px;
+    margin-bottom: 10px;
+}
+.container_left_storelocator{
+    background-color: cornflowerblue;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.container_left_tools{
+    background-color: cornflowerblue;
+    height: 60px;
+}
+.container_right{
+
+}
+.container_right_header{
+    background-color: cornflowerblue;
+    height: 40px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+.container_right_1{
+    display: flex;
+}
+.container_right_1_firstblock{
+    background-color: cornflowerblue;
+    width: 200px;
+    height: 70px;
+    margin-right: 10px;
+    margin-bottom: 10px ;
+}
+.container_right_bot_1_secondblock{
+    background-color: cornflowerblue;
+    width: 90px;
+    height: 70px;
+}
+.container_right_2{
+    display: flex;
+}
+.container_right_2_firstblock{
+    background-color: cornflowerblue;
+    height: 300px;
+    width: 200px;
+    margin-right: 10px;
+}
+.container_right_bot_2_secondblock{
+    background-color: cornflowerblue;
+    height: 300px;
+    width: 90px;
+
+}
+.footer{
+
+    background-color: cornflowerblue;
+    width: 380px;
+    height: 50px;
+}
+@media screen  and (min-width: 0px) and (max-width: 600px){
+    .container{
+        display: flex;
+    }
+    .container_left{
+        margin:  0 10px 10px 0 ;
+        width: 70px;
+    }
+    .container_left_logo{
+        background-color: cornflowerblue;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    .container_left_nav{
+        background-color: cornflowerblue;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+    .container_left_storelocator{
+        background-color: cornflowerblue;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .container_left_tools{
+        background-color: cornflowerblue;
+        height: 60px;
+    }
+    .container_right{
+
+    }
+    .container_right_header{
+        background-color: cornflowerblue;
+        height: 40px;
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    .container_right_1{
+        display: flex;
+    }
+    .container_right_1_firstblock{
+        background-color: cornflowerblue;
+        width: 200px;
+        height: 70px;
+        margin-right: 10px;
+        margin-bottom: 10px ;
+    }
+    .container_right_bot_1_secondblock{
+        background-color: cornflowerblue;
+        width: 90px;
+        height: 70px;
+    }
+    .container_right_2{
+        display: flex;
+    }
+    .container_right_2_firstblock{
+        background-color: cornflowerblue;
+        height: 300px;
+        width: 200px;
+        margin-right: 10px;
+    }
+    .container_right_bot_2_secondblock{
+        background-color: cornflowerblue;
+        height: 300px;
+        width: 90px;
+
+    }
+    .footer{
+
+        background-color: cornflowerblue;
+        width: 380px;
+        height: 50px;
+    }
+}
