@@ -1,5 +1,76 @@
 // Масиви та об'єкти:
 // - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
+let arr1 = [
+    1,2,3,4,5,true,'qwe',"qwe",8,9
+];
+for (let i = 0; i < arr1.length; i++) {
+    console.log(arr1[i]);
+}
+// - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
+let bookReader = {
+
+
+};
+let arr1 = [
+    1,2,3,4,5,true,'qwe',"qwe",8,9
+];
+for (let i = 0; i < arr1.length; i++) {
+    console.log(arr1[i]);
+}
+// - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
+let bookReader1 = {
+    title : 'haryy',
+    pageCount: 13,
+    genre : 'male'
+};
+let bookReader2 = {
+    title : 'haryy',
+    pageCount: 15,
+    genre : 'male'
+};
+let bookReader3 = {
+    title : 'haryy',
+    pageCount: 15,
+    genre : 'male'
+};
+// - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - являється  масивом. Кожен автор має поля name та age.
+
+let bookReader4 = {
+    title : 'haryy',
+    pageCount: 15,
+    genre : 'male',
+    authors:[ 'joahn Roiling', 16]
+};
+let bookReader5 = {
+    title : 'haryy',
+    pageCount: 15,
+    genre : 'male',
+    authors:[ 'stiv hoking', 16]
+};
+let bookReader6 = {
+    title : 'haryy',
+    pageCount: 15,
+    genre : 'male',
+    authors:[ 'egor gtin', 16]
+};
+console.log(bookReader1);
+console.log(bookReader2);
+console.log(bookReader3);
+console.log(bookReader4);
+console.log(bookReader5);
+console.log(bookReader6);
+// - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
+//
+
+let masyw =  [
+    name,
+    username,
+    password
+];
+// - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - являється  масивом. Кожен автор має поля name та age.
+// - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
+//
+
 
 //
 // Логічні розгалуження:
