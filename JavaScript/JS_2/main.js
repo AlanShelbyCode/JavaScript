@@ -67,6 +67,11 @@ let masyw =  [
     username,
     password
 ];
+let masyw =  [
+    name,
+    username,
+    password
+];
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - являється  масивом. Кожен автор має поля name та age.
 // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
 //
