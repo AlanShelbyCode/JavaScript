@@ -44,12 +44,12 @@ while(j<20){
 // побудувати структуру по шаблону  Зробити адекватну стилізацію
 // Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
 //
-// let products = [
-//     {
-//         title: 'milk',
-//         price: 22,
-//         image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
-//     },
+ let products = [
+     {
+         title: 'milk',
+         price: 22,
+         image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
+     }]
 //     {
 //         title: 'juice',
 //         price: 27,
