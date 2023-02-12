@@ -100,11 +100,29 @@ document.write(findMin(arrMin));
 function findSum(arrSum) {
     let result = 0;
     for (let i = 0; i < arrSum.length; i++) {
-        debugger;
         result = result + result[i];
     }
     return result;
 }
 let arrSum = [5,2,3,4,5,6,3,1,4,3,0];
 console.log(findSum(arrSum));
-// - створити функцію яка повертає найменьше число з масиву
+
+// - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
+// Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
+let swapArr1 = [11,22,33,44];
+
+function swap(swapArr,index_1,index_2){
+    let index_help = swapArr[index_1];
+
+    swapArr[index_1] = swapArr[index_2];
+    swapArr[index_2] = index_help;
+
+    return swapArr;
+}
+
+console.log(swap(swapArr1, 0, 1));
+
+// - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
+// Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
+
+
