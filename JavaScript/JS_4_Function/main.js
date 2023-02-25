@@ -45,12 +45,15 @@ let argUl = 1231;
 // Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 
 function CreateUl2(argUl2,itter) {
+    document.write(`<ul>`);
+
   for (let i = 0; i< itter;i++){
       document.write(`<li>${argUl2}</li>`);
   }
+  document.write(`</ul>`);
 }
 let argUl2 = 887;
-let itter = 5;
+let itter = 3;
 
 CreateUl2(argUl2,itter);
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві),
