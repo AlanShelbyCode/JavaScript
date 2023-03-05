@@ -1,32 +1,49 @@
 // - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
 
-function User (id, name, surname , email, phone)  {
-    this.id = id;
-    this.name = name;
-    this.surname = surname;
-    this.email = email;
-    this.phone = phone;
-}
-let user2 = new User(123,123,123,123,true);
-console.log(user2);
-// створити пустий масив, наповнити його 10 об'єктами new User(....)
-let userMasyw = []
-for (let i = 0; i < 10; i++) {
-    let user2 = new User(i+1,123,123,123,true);
-    userMasyw.push(user2);
-}
-console.log(userMasyw);
-// - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
-console.log(userMasyw.filter((item) => { return item.id % 2 === 0 }));
-// - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
-console.log(userMasyw.sort((a,b) => { return b.id-a.id}));
+// function User (id, name, surname , email, phone)  {
+//     this.id = id;
+//     this.name = name;
+//     this.surname = surname;
+//     this.email = email;
+//     this.phone = phone;
+// }
+// let user2 = new User(123,123,123,123,true);
+// console.log(user2);
+// // створити пустий масив, наповнити його 10 об'єктами new User(....)
+// let userMasyw = []
+// for (let i = 0; i < 10; i++) {
+//     let user2 = new User(i+1,123,123,123,true);
+//     userMasyw.push(user2);
+// }
+// console.log(userMasyw);
+// // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
+// console.log(userMasyw.filter((item) => { return item.id % 2 === 0 }));
+// // - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
+// console.log(userMasyw.sort((a,b) => { return b.id-a.id}));
 // - створити класс для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
-class ClientClass {
+class Client {
+    constructor(id, name, surname , email, phone, order) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.phone = phone;
+        this.order = order;
 
-
-
+    }
 }
 // створити пустий масив, наповнити його 10 об'єктами Client
+const arrrauUser = [];
+for (let i = 0; i < 10; i++) {
+    if (i%2 === 0 ){
+arrrauUser.push(new Client(i+1,`Vas`,`An`,`gmail`,i+380,[123,123,123,123]));
+    }
+    else {
+        arrrauUser.push(new Client(i+1,`Pet`,`Tep`,`outlook`,i+380,[567,567,567,567,567]));
+    }
+}
+console.log(arrrauUser);
+
 // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
 //
 //

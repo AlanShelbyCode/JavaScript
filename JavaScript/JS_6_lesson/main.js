@@ -20,7 +20,7 @@ for (const string of masyw) {
 // - Перевести до нижнього регістру настипні стрінгові значення
 // 'HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'
 let masyw2 = ['HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL']
-for (const string of masyw) {
+for (const string of masyw2) {
     console.log(string.toLowerCase())
 }
 
@@ -92,7 +92,7 @@ console.log(sort);
 // -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
 console.log(coursesAndDurationArray.filter((item) => item.monthDuration > 5));
 // -- за допомоги map перетворити кожен елемент на наступний тип {id,title,monthDuration}
-let map2 = coursesAndDurationArray.map((value,index) => {
+let map2 = coursesAndDurationArray.map((value) => {
     return {id : value.index+1, title : value.title, moumthDuration : value.monthDuration}
 } )
 console.log(map2);
@@ -141,7 +141,7 @@ let koloda = [
 
 ]
 // - знайти піковий туз
-console.log(koloda.find((item) =>item.title ==='tuz'&& item.index === 'pika'));
+console.log(koloda.find((item) => item.title ==='tuz'&& item.index === 'pika'));
 // - всі шістки
 console.log(koloda.filter((card) => card.title === 6));
 // - всі червоні карти
