@@ -51,6 +51,20 @@ console.log(arrrauUser.sort((a, b) => {
 }));
 // - Створити функцію конструктор яка дозволяє створювати об'єкти car, з властивостями модель, виробник,
 // рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
+
+function Car (model,creator,year,speed,value){
+    this.model = model;
+    this.creator = creator;
+    this.year = year ;
+    this.speed = speed;
+    this.value = value;
+   // const drive = () => console.log(`їдемо зі швидкістю ${speed} на годину`);
+
+}
+cars = [];
+
+cars.push(new Car(123,123,123,123,123));
+console.log(cars);
 // -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
 // -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
 // -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
