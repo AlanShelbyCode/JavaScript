@@ -47,24 +47,27 @@ console.log(arrrauUser);
 // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
 //
 console.log(arrrauUser.sort((a, b) => {
-    return a.order - b.order
+    return a.order.length - b.order.length
 }));
 // - Створити функцію конструктор яка дозволяє створювати об'єкти car, з властивостями модель, виробник,
 // рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
 
-function Car (model,creator,year,speed,value){
-    this.model = model;
-    this.creator = creator;
-    this.year = year ;
-    this.speed = speed;
-    this.value = value;
-   // const drive = () => console.log(`їдемо зі швидкістю ${speed} на годину`);
+// function Car (model,creator,year,speed,value){
+//     this.model = model;
+//     this.creator = creator;
+//     this.year = year ;
+//     this.speed = speed;
+//     this.value = value;
+//     const drive = (speed) => console.log(`їдемо зі швидкістю ${speed} на годину`);
+//
+// }
+// cars = [];
+//
+// cars.push(new Car(123,123,123,123,123));
+// console.log(cars);
+// //console.log(Car.drive(123));
 
-}
-cars = [];
 
-cars.push(new Car(123,123,123,123,123));
-console.log(cars);
 // -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
 // -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
 // -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
@@ -82,6 +85,26 @@ console.log(cars);
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
 //
+
+class Car {
+    constructor(model,creator,year,speed,value) {
+        this.model = model;
+        this.creator = creator;
+        this.year = year;
+        this.speed = speed;
+        this.value = value;
+    }
+        drive(){
+            return`їдемо зі швидкістю ${this.speed} на годину`
+        }
+        // info (){}
+        // increaseMaxSpeed (newSpeed){}
+        // drive(){}
+
+
+}
+const car1 = new Car(123,1,231,23,123);
+console.log(car1.drive());
 //
 //
 // -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
