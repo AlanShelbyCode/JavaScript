@@ -80,7 +80,7 @@ console.log(arrrauUser.sort((a, b) => {
 // - (Те саме, тільки через клас)
 // Створити клас який дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
 // -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
-// -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
+
 // -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
@@ -97,14 +97,33 @@ class Car {
         drive(){
             return`їдемо зі швидкістю ${this.speed} на годину`
         }
-        // info (){}
-        // increaseMaxSpeed (newSpeed){}
-        // drive(){}
+        // -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
+        info (){
+            console.log(` ${this.model} = model;
+    ${this.creator} = creator;
+    ${this.year} = year;
+    ${this.speed} = speed;
+    ${this.value} = value;`)
+        }
+    info2 (){
+        console.log(`info____________`)
+        for (const carKey in this) {
+            console.log(`${carKey} - ${this[carKey]}` );
+        }
+    }
+        increaseMaxSpeed (newSpeed){
+        return this.speed = newSpeed;
+        }
+        Adddrive(){}
 
 
 }
 const car1 = new Car(123,1,231,23,123);
 console.log(car1.drive());
+//console.log(car1.info());
+//console.log(car1.info2());
+car1.increaseMaxSpeed(654);
+console.log(car1);
 //
 //
 // -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
