@@ -114,7 +114,14 @@ class Car {
         increaseMaxSpeed (newSpeed){
         return this.speed = newSpeed;
         }
-        Adddrive(){}
+        //- змінює рік випуску на значення newValue
+    changeYear (newValue){
+        return this.year = newValue;
+    }
+    //приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
+        Adddrive(driver){
+       return  this.driver = driver;
+        }
 
 
 }
@@ -123,6 +130,9 @@ console.log(car1.drive());
 //console.log(car1.info());
 //console.log(car1.info2());
 car1.increaseMaxSpeed(654);
+car1.Adddrive(123);
+
+
 console.log(car1);
 //
 //
